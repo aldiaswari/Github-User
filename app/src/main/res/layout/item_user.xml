@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="12dp"
+        android:background="@drawable/card_background"
+        android:elevation="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_user"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:transitionName="image"
+            android:outlineProvider="bounds"
+            app:riv_corner_radius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/img_user"
+            android:maxLines="1"
+            android:text="@string/username"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/img_user"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginLeft="32dp"/>
+    <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company"
+            android:drawableLeft="@drawable/ic_company_24dp"
+            android:id="@+id/tv_company"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toEndOf="@+id/img_user"/>
+
+    <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:drawableLeft="@drawable/ic_person_pin_circle_blue_24dp"
+            android:id="@+id/tv_location"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/tv_company"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toEndOf="@+id/img_user"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

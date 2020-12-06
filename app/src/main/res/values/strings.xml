@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Github</string>
+
+    <string name="noconnection">Oooppss!!! Tidak ada Koneksi Internet</string>
+    <string name="company_me">Company Me</string>
+    <string name="username_me">Username Me</string>
+    <string name="username">Username</string>
+    <string name="company">Company</string>
+    <string name="followers">Followers</string>
+    <string name="name">Name</string>
+    <string name="year">2020</string>
+    <string name="dsc">desc</string>
+    <string name="repo">repo</string>
+    <string name="following">Following</string>
+    <string name="bio">bio</string>
+    <string name="follower_placeholder">1M</string>
+    <string name="following_placeholder">0</string>
+    <string name="name_recieved">Name Received</string>
+    <string name="location">Location</string>
+    <string name="location_recieved">Location Received</string>
+    <string name="repository_recieved">RepositoryReceived</string>
+
+
+</resources>

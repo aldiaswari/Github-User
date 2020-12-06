@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/white"
+              android:layout_height="wrap_content"
+              xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+        <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/button_rounded"
+                android:layout_width="match_parent" android:layout_height="100dp" android:layout_margin="10dp">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/backround_drawable" android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/notifintro"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:lottie_fileName="ripple.json"
+                        app:lottie_loop="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        app:lottie_autoPlay="true"
+                        android:onClick="Notifications"/>
+                <customfonts.TextViewSFProDisplayMedium
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Dicoding"/>
+             <customfonts.TextViewSFProDisplayMedium
+                     android:textSize="18dp"
+                     android:textColor="@color/white"
+                     android:gravity="right|center_vertical|center_horizontal|center"
+                     android:id="@+id/name"
+                     android:visibility="visible"
+                     android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="10dp"
+                     android:text="Aldi Aswari"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="0dp"
+            android:text="User"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+
+            android:orientation="vertical"
+            shimmer:duration="800">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <include layout="@layout/layout_placeholder"/>
+            <include layout="@layout/layout_placeholder"/>
+            <include layout="@layout/layout_placeholder"/>
+            <include layout="@layout/layout_placeholder"/>
+            <include layout="@layout/layout_placeholder"/>
+            <include layout="@layout/layout_placeholder"/>
+            <include layout="@layout/layout_placeholder"/>
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+</LinearLayout>
