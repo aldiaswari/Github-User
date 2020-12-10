@@ -1,2 +1,2 @@
 # Github-User
-Submission BFAA Dicoding - Github User
+Submission BFAA 1 Dicoding - Github User
